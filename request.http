@@ -1,0 +1,30 @@
+###
+GET http://localhost:8000/api/expenses HTTP/1.1
+
+###
+POST http://localhost:8000/api/expenses HTTP/1.1
+Content-Type: application/json
+
+{
+    "description": "lorem ipsum dolor sit amet",
+    "amount": "200",
+    "category": "Laptop",
+    "date": "2024-11-05"
+}
+
+###
+GET  http://localhost:8000/api/expenses/9d97fda2-98a7-4e9e-8604-f866edf1b94c HTTP/1.1
+
+###
+PUT http://localhost:8000/api/expenses/9d97fda2-98a7-4e9e-8604-f866edf1b94c HTTP/1.1
+Content-Type: application/json
+
+{
+    "description": "lorem ipsum dolor sit amet",
+    "amount": "200",
+    "category": "Laptop Updated",
+    "date": "2024-11-05"
+}
+
+###
+DELETE http://localhost:8000/api/expenses/9d97f9f7-3496-4a96-ae17-8d12712f80bb HTTP/1.1
